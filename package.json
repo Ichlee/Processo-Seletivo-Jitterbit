@@ -1,0 +1,27 @@
+{
+  "name": "processo-seletivo-jitterbit",
+  "version": "1.0.0",
+  "description": "Repositorio criado para solução de um código construção de uma API em JS para processo seletivo de uma vaga # Orders API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ichlee/Processo-Seletivo-Jitterbit.git",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ichlee/Processo-Seletivo-Jitterbit/issues"
+  },
+  "homepage": "https://github.com/Ichlee/Processo-Seletivo-Jitterbit#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "express": "^5.2.1",
+    "pg": "^8.20.0"
+  }
+}
