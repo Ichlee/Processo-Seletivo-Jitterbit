@@ -32,17 +32,17 @@ API simples em **Node.js + Express** para gerenciamento de pedidos, com integra�
    cd orders-api
 2. Instale as dependências
 
-▶️ Executando a API
-bash
-npm start
+3. ▶️ Executando a API:
+    ```bash
+    npm start
 A API estará disponível em:
 http://localhost:3000
 
-📘 Exemplos de requisições
-Criar pedido
-
-bash
-curl --location 'http://localhost:3000/order' \
+4. 📘 Exemplos de requisições
+ 
+ Criar pedido:
+```bash
+    curl --location 'http://localhost:3000/order' \
 --header 'Content-Type: application/json' \
 --data '{
   "numeroPedido": "v10089015vdb-01",
@@ -57,34 +57,39 @@ curl --location 'http://localhost:3000/order' \
   ]
 }'
 
-Obter pedido por ID
-bash
-curl http://localhost:3000/order/v10089015vdb-01
+```
+Obter pedido por ID:
+```bash
+    curl http://localhost:3000/order/v10089015vdb-01
+```
 
-Listar todos os pedidos
-bash
-curl http://localhost:3000/order/list
+Listar todos os pedidos:
+```bash
+    curl http://localhost:3000/order/list
+```
 
-Atualizar pedido
-bash
-curl -X PUT http://localhost:3000/order/v10089015vdb-01 \
---header 'Content-Type: application/json' \
---data '{
-  "numeroPedido": "v10089015vdb-01",
-  "valorTotal": 12000,
-  "dataCriacao": "2023-07-19T12:24:11.5299601+00:00",
-  "items": [
-    {
+Atualizar pedido:
+```bash
+    curl -X PUT http://localhost:3000/order/v10089015vdb-01 \
+    --header 'Content-Type: application/json' \
+    --data '{
+    "numeroPedido": "v10089015vdb-01",
+    "valorTotal": 12000,
+    "dataCriacao": "2023-07-19T12:24:11.5299601+00:00",
+    "items": [
+        {
       "idItem": "2434",
       "quantidadeItem": 2,
       "valorItem": 2000
     }
-  ]
-}'
+    ]
+        }'
+```
 
-Deletar pedido
-bash
-curl -X DELETE http://localhost:3000/order/v10089015vdb-01
+Deletar pedido:
+```bash
+    curl -X DELETE http://localhost:3000/order/v10089015vdb-01
+```
 
 ## ✅ Critérios atendidos
 - CRUD completo de pedidos
