@@ -17,13 +17,14 @@ API simples em **Node.js + Express** para gerenciamento de pedidos, com integra�
 - pg (node-postgres)
 
 ## 📂 Estrutura do projeto
-/orders-api
+```text /orders-api
   ├── index.js
   ├── package.json
   ├── package-lock.json
   ├── README.md
   └── /db
       └── schema.sql
+```
 ## ⚙️ Instalação
 
 1. Clone o repositório:
